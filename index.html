@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Commune et BO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Remplace "YOUR_API_KEY" par ta clé API Google Maps -->
+</head>
+<body>
+    <div class="container">
+        <h1>Recherche de Commune</h1>
+        <div class="search-box">
+            <input type="text" id="commune-input" placeholder="Tapez le nom de la commune...">
+            <div id="suggestions"></div>
+        </div>
+        <div class="info-box">
+            <h2>Informations :</h2>
+            <p><strong>Code INSEE : </strong><span id="insee-code">Sélectionnez une commune</span></p>
+            <p><strong>BO : </strong><span id="bo-output">Sélectionnez une commune</span></p>
+            <p><strong>Base : </strong><span id="base-output">Sélectionnez une commune</span></p>
+        </div>
+        <div id="map-container">
+            <h2>Carte</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
